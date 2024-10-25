@@ -1,67 +1,123 @@
- <style>
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0; 
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
 
-        header {
-            background-color: #007bff; 
-            padding: 20px; 
-            color: white; 
-        }
+.header, .footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-        h1 {
-            text-align: center; 
-            font-size: 2.5em; 
-        }
+h1 {
+    font-size: 2.5em;
+}
 
-        nav ul {
-            list-style: none; 
-            display: flex; 
-            justify-content: center; 
-        }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
 
-        nav li {
-            margin-right: 15px; 
-        }
+nav li {
+    margin-right: 15px;
+}
 
-        nav a {
-            color: white; 
-            text-decoration: none; 
-            font-weight: bold; 
-            padding: 10px; 
-            transition: background-color 0.3s ease;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
 
-        nav a:hover {
-            background-color: #0056b3; 
-            border-radius: 5px;
-        }
-        
-        .product-list {
-            margin: 20px auto; 
-            padding: 20px;
-            background-color: white; 
-            border: 1px solid #ccc; 
-            max-width: 800px; 
-            border-radius: 10px; 
-        }
+nav a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
 
-       
-        .button {
-            display: inline-block; 
-            padding: 10px 20px;
-            background-color: #28a745; 
-            color: white; 
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+.main-content {
+    padding: 20px;
+}
 
-        .button:hover {
-            background-color: #218838; 
-        }
-    </style>
+.product-list {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-width: 800px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+/* Стилі для висувного меню */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu {
+    position: fixed;
+    left: -290px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #007bff;
+    color: white;
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 999;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu h2 {
+    color: #fff;
+    margin-top: 45px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
