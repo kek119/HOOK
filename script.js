@@ -1,4 +1,4 @@
-   // Відкриття та закриття висувного меню
+// Відкриття та закриття висувного меню
     document.querySelector('.menu-button').addEventListener('click', () => {
         document.querySelector('.menu').classList.toggle('active');
     });
@@ -22,5 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
     
 
