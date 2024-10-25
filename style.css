@@ -1,7 +1,5 @@
 
- <style>
-        
-body {
+  body {
         font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 0;
@@ -117,6 +115,3 @@ body {
     .menu ul li a:hover {
         text-decoration: underline;
     }
-
-    </style>
-
