@@ -9,7 +9,7 @@
     <header>
         <h1> <nav>
             <ul>
-                <li><a href="global.html"> <h1>HOOK</h1> </a></li>
+                <li><a href="global.html"><h1>HO1OK</h1></a></li>
 
    
 
