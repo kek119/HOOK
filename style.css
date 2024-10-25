@@ -1,134 +1,70 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('toggle-size-btn');
-    let isReduced = false;
-
-    button.addEventListener('click', function() {
-        if (!isReduced) {
-
-            document.querySelector('h1').style.fontSize = '1.5em';
-
-            document.querySelector('nav ul').style.fontSize = '0.9em'; 
-            document.body.style.transform = 'scale(0.9)'; 
-
-            button.textContent = 'Повернути розмір елементів'; 
-            isReduced = true; 
-        } else {
-
-            document.querySelector('h1').style.fontSize = '';
-
-            document.querySelector('nav ul').style.fontSize = ''; 
-            document.body.style.transform = ''; 
-
-            button.textContent = 'Зменшити розмір елементів'; 
-            isReduced = false; 
+ <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; 
         }
-    });
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('toggle-size-btn');
-    let isReduced = false;
 
-    button.addEventListener('click', function() {
-        if (!isReduced) {
-
-            document.querySelector('h2').style.fontSize = '1.5em';
-
-            document.querySelector('nav ul').style.fontSize = '0.9em'; 
-            document.body.style.transform = 'scale(0.9)'; 
-
-            button.textContent = 'Повернути розмір елементів'; 
-            isReduced = true; 
-        } else {
-
-            document.querySelector('h2').style.fontSize = '';
-
-            document.querySelector('nav ul').style.fontSize = ''; 
-            document.body.style.transform = ''; 
-
-            button.textContent = 'Зменшити розмір елементів'; 
-            isReduced = false; 
+        header {
+            background-color: #007bff; 
+            padding: 20px; 
+            color: white; 
         }
-    });
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('toggle-size-btn');
-    let isReduced = false;
 
-    button.addEventListener('click', function() {
-        if (!isReduced) {
-
-            document.querySelector('h3').style.fontSize = '1.5em';
-
-            document.querySelector('nav ul').style.fontSize = '0.9em'; 
-            document.body.style.transform = 'scale(0.9)'; 
-
-            button.textContent = 'Повернути розмір елементів'; 
-            isReduced = true; 
-        } else {
-
-            document.querySelector('h3').style.fontSize = '';
-
-            document.querySelector('nav ul').style.fontSize = ''; 
-            document.body.style.transform = ''; 
-
-            button.textContent = 'Зменшити розмір елементів'; 
-            isReduced = false; 
+        h1 {
+            text-align: center; 
+            font-size: 2.5em; 
         }
-    });
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('toggle-size-btn');
-    let isReduced = false;
 
-    button.addEventListener('click', function() {
-        if (!isReduced) {
-
-            document.querySelector('p').style.fontSize = '1.5em';
-
-            document.querySelector('nav ul').style.fontSize = '0.9em'; 
-            document.body.style.transform = 'scale(0.9)'; 
-
-            button.textContent = 'Повернути розмір елементів'; 
-            isReduced = true; 
-        } else {
-
-            document.querySelector('p').style.fontSize = '';
-
-            document.querySelector('nav ul').style.fontSize = ''; 
-            document.body.style.transform = ''; 
-
-            button.textContent = 'Зменшити розмір елементів'; 
-            isReduced = false; 
+        nav ul {
+            list-style: none; 
+            display: flex; 
+            justify-content: center; 
         }
-    });
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('toggle-size-btn');
-    let isReduced = false;
 
-    button.addEventListener('click', function() {
-        if (!isReduced) {
-
-            document.querySelector('h4').style.fontSize = '1.5em';
-
-            document.querySelector('nav ul').style.fontSize = '0.9em'; 
-            document.body.style.transform = 'scale(0.9)'; 
-
-            button.textContent = 'Повернути розмір елементів'; 
-            isReduced = true; 
-        } else {
-
-            document.querySelector('h4').style.fontSize = '';
-
-            document.querySelector('nav ul').style.fontSize = ''; 
-            document.body.style.transform = ''; 
-
-            button.textContent = 'Зменшити розмір елементів'; 
-            isReduced = false; 
+        nav li {
+            margin-right: 15px; 
         }
-    });
-});
 
+        nav a {
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            padding: 10px; 
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3; 
+            border-radius: 5px;
+        }
+        
+        .product-list {
+            margin: 20px auto; 
+            padding: 20px;
+            background-color: white; 
+            border: 1px solid #ccc; 
+            max-width: 800px; 
+            border-radius: 10px; 
+        }
+
+       
+        .button {
+            display: inline-block; 
+            padding: 10px 20px;
+            background-color: #28a745; 
+            color: white; 
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #218838; 
+        }
+   
             footer {
                 background-color:#007bff;
                 padding: 10px;
@@ -137,3 +73,4 @@ document.addEventListener('DOMContentLoaded', function() {
                 bottom: 0;
                 width: 100%;
             }
+ </style>
