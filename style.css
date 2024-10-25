@@ -62,7 +62,7 @@ nav a:hover {
     background-color: #218838; 
 }
 
-/* Стилі для висувного меню */
+
 .menu-button {
     position: fixed;
     top: 20px;
@@ -77,7 +77,7 @@ nav a:hover {
 
 .menu {
     position: fixed;
-    left: -282px; /* Сховано за екраном */
+    left: -282px; 
     top: 0;
     width: 250px;
     height: 100%;
@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 .menu.active {
-    left: 0; /* Відкривається зліва */
+    left: 0; 
 }
 
 .menu h2 {
@@ -114,3 +114,11 @@ nav a:hover {
 .menu ul li a:hover {
     text-decoration: underline;
 }
+            footer {
+                background-color:#007bff;
+                padding: 10px;
+                text-align: center;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
