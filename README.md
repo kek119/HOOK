@@ -7,18 +7,11 @@
 </head>
 <body>
     <header>
-        <h1>HOOK</h1>
-        <nav>
+        <h1> <nav>
             <ul>
-                <li><a href="global.html">Головна сторінка</a></li>
-                <li><a href="catalog.html">Каталог товарів</a></li>
-                <li><a href="basket.html">Кошик</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-            </ul>
-        </nav>
+              <li><a href="global.html"> <h1>HOOK</h1> </a></li>
+        </nav></h1>
+      <nav>          
     </header>
-    <section class="product-list">
-        <a href="catalog.html" class="button">Переглянути каталог</a>
-    </section>
 </body>
 </html>
